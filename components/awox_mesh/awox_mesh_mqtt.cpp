@@ -479,11 +479,11 @@ void AwoxMeshMqtt::send_group_discovery(Group *group) {
         if (group->device_info->has_feature(FEATURE_COLOR)) {
           color_modes.add("rgb");
 
-          root["effect"] = true;
-          JsonArray effect_list = root.createNestedArray(MQTT_EFFECT_LIST);
-          effect_list.add("candle");
-          effect_list.add("color loop");
-          effect_list.add("stop");
+         // root["effect"] = true;
+         // JsonArray effect_list = root.createNestedArray(MQTT_EFFECT_LIST);
+         // effect_list.add("candle");
+         // effect_list.add("color loop");
+         // effect_list.add("stop");
         }
 
         if (group->device_info->has_feature(FEATURE_WHITE_TEMPERATURE)) {
